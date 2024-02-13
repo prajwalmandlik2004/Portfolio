@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 :root {
     --header-height: 3rem;
+<<<<<<< HEAD
     --hue-color:270;
+=======
+    --hue-color :260;
+>>>>>>> 1eabb988cf0c7b86fdac369ae5fba06e655099bd
     --first-color: hsl(var(--hue-color), 69%, 61%);
     /* #6e57e0 */
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
