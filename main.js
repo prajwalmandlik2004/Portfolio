@@ -6,18 +6,18 @@ async function handleSubmit(event) {
     var status = document.getElementById("alert");
     var data = new FormData(event.target);
     fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                Accept: "application/json",
-            },
-        })
+        method: form.method,
+        body: data,
+        headers: {
+            Accept: "application/json",
+        },
+    })
         .then((response) => {
             status.innerHTML = "Your message has been sent.";
             document.querySelector(".alert_style").style.display = "block";
 
             // hide alert after 3 seconds
-            setTimeout(function() {
+            setTimeout(function () {
                 document.querySelector(".alert_style").style.display = "none";
             }, 4000);
             form.reset();
@@ -27,7 +27,7 @@ async function handleSubmit(event) {
             document.querySelector(".alert_style").style.display = "block";
 
             // hide alert after 3 seconds
-            setTimeout(function() {
+            setTimeout(function () {
                 document.querySelector(".alert_style").style.display = "none";
             }, 4000);
         });
@@ -70,7 +70,7 @@ const skillContentArr = Array.from(skillContent);
 const skillHeaderArr = Array.from(skillHeader);
 
 skillHeaderArr.forEach((element, idx) => {
-    element.addEventListener("click", function() {
+    element.addEventListener("click", function () {
         skillContentArr[idx].classList.toggle("skills_open");
     });
 });
@@ -191,3 +191,11 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem("selected-theme", getCurrentTheme());
     localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+// Freelancing : 
+
+const coming = () => {
+    alert("Currently Working 🌱 , Stay Tuned 🤩");
+}
+
+
